@@ -16,11 +16,5 @@ pipeline {
                 echo "test version ${NEW_VERSION}"
             }
         }
-        stage("deploy") {
-            steps {
-                echo 'deploy the application ..'
-                echo "deploy version ${NEW_VERSION}"
-            }
-        }
     }
 }
