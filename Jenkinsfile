@@ -18,7 +18,7 @@ pipeline {
         }
         stage("desploy") {
             steps {
-                echo 'desploy the application ..'
+                echo 'xin chao con hang the application ..'
                 echo "desploy version ${NEW_VERSION}"
             }
         }
