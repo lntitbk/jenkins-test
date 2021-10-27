@@ -16,10 +16,10 @@ pipeline {
                 echo "test version ${NEW_VERSION}"
             }
         }
-        stage("deploy") {
+        stage("desploy") {
             steps {
-                echo 'deploy the application ..'
-                echo "deploy version ${NEW_VERSION}"
+                echo 'xin chao con hang the application ..'
+                echo "desploy version ${NEW_VERSION}"
             }
         }
     }
