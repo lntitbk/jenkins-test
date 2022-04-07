@@ -10,6 +10,12 @@ pipeline {
                 echo "building version ${NEW_VERSION}"
             }
         }
+        stage("validator") {
+            steps {
+                echo 'validator ..'
+                echo "building version ${NEW_VERSION}"
+            }
+        }
         stage("build") {
             steps {
                 echo 'building the application ..'
