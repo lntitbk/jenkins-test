@@ -4,6 +4,12 @@ pipeline {
         NEW_VERSION = '1.3.0'
     }
     stages {
+        stage("pull code") {
+            steps {
+                echo 'pull code ..'
+                echo "building version ${NEW_VERSION}"
+            }
+        }
         stage("build") {
             steps {
                 echo 'building the application ..'
